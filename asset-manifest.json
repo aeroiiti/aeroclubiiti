@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/aeroclubiiti/static/css/main.f605e57c.chunk.css",
+    "main.js": "/aeroclubiiti/static/js/main.f88e1374.chunk.js",
+    "main.js.map": "/aeroclubiiti/static/js/main.f88e1374.chunk.js.map",
+    "runtime-main.js": "/aeroclubiiti/static/js/runtime-main.424ffadc.js",
+    "runtime-main.js.map": "/aeroclubiiti/static/js/runtime-main.424ffadc.js.map",
+    "static/js/2.f1174b28.chunk.js": "/aeroclubiiti/static/js/2.f1174b28.chunk.js",
+    "static/js/2.f1174b28.chunk.js.map": "/aeroclubiiti/static/js/2.f1174b28.chunk.js.map",
+    "index.html": "/aeroclubiiti/index.html",
+    "precache-manifest.405a2fa2996f1afe5f2b1405285670fa.js": "/aeroclubiiti/precache-manifest.405a2fa2996f1afe5f2b1405285670fa.js",
+    "service-worker.js": "/aeroclubiiti/service-worker.js",
+    "static/css/main.f605e57c.chunk.css.map": "/aeroclubiiti/static/css/main.f605e57c.chunk.css.map",
+    "static/js/2.f1174b28.chunk.js.LICENSE.txt": "/aeroclubiiti/static/js/2.f1174b28.chunk.js.LICENSE.txt",
+    "static/media/data.jpg": "/aeroclubiiti/static/media/data.d4b23d4f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.424ffadc.js",
+    "static/js/2.f1174b28.chunk.js",
+    "static/css/main.f605e57c.chunk.css",
+    "static/js/main.f88e1374.chunk.js"
+  ]
+}
