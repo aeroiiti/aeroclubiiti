@@ -1,14 +1,15 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './components/layout/Header';
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import About from './components/pages/About';
-import Home from './components/pages/Home';
-import Login from './components/auth/Login';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./components/layout/Header";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import About from "./components/pages/About";
+import Home from "./components/pages/Home";
+import Login from "./components/auth/Login";
+import "./App.css";
 
 class App extends React.Component {
+  //test change by sarisha das
   render() {
     return (
       <Router>
