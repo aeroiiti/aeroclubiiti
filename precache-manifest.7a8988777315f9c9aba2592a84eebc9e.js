@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "870acfb8150daed7f0dea0ccb01e156b",
+    "revision": "cab3677b35e91cdf4f1f2737ba2b0289",
     "url": "/aeroclubiiti/index.html"
   },
   {
-    "revision": "449137a6ff84a1d10934",
+    "revision": "979833a82e4f424f89f3",
     "url": "/aeroclubiiti/static/css/main.f605e57c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aeroclubiiti/static/js/2.f1174b28.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "449137a6ff84a1d10934",
-    "url": "/aeroclubiiti/static/js/main.f88e1374.chunk.js"
+    "revision": "979833a82e4f424f89f3",
+    "url": "/aeroclubiiti/static/js/main.f7856860.chunk.js"
   },
   {
     "revision": "067274361be8e91da78e",
