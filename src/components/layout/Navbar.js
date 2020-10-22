@@ -13,12 +13,6 @@ export class Navbar extends Component {
             <li className='link unactive w-32'>
               <Link to='/about'>ABOUT</Link>
             </li>
-            <li className='link unactive w-32'>
-              <Link to='/register'>REGISTER</Link>
-            </li>
-            <li className='link unactive w-32'>
-              <Link to='/login'>LOGIN</Link>
-            </li>
           </ul>
         </nav>
       </div>
