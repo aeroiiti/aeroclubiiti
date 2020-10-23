@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Members from '../member/Members';
+
 const About = () => {
   return (
     <div className='flexbox  container bg-white wrapper'>

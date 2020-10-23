@@ -1,35 +1,39 @@
-import React, { Fragment } from 'react';
-import data from '../../assets/images/data.jpg';
+import React, { Fragment, useEffect } from 'react';
+import galaxy from '../../assets/images/galaxy.jpg';
+import PostList from '../post/PostList';
+import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css/dist/js/materialize.min.js';
 
 const Home = () => {
+  useEffect(() => {
+    //Init Materialize JS
+    M.AutoInit();
+  });
   return (
     <Fragment>
       <section className='main wrapper container'>
         <h1 className='flex justify-center'>Lorem</h1>
         <p className='flex justify-center text-xl'>ipsum</p>
-        <div className='flex justify-center mt-12'>
-          <img src={data} width='75%' height='40%' alt='Not found'></img>
+
+        <div className='carousel'>
+          <a className='carousel-item ' href='#one!'>
+            <img src={galaxy} alt='Not found'></img>
+          </a>
+          <a className='carousel-item' href='#two!'>
+            <img src={galaxy} alt='Not found'></img>
+          </a>
+          <a className='carousel-item' href='#three!'>
+            <img src={galaxy} alt='Not found'></img>
+          </a>
+          <a className='carousel-item' href='#four!'>
+            <img src={galaxy} alt='Not found'></img>
+          </a>
+          <a className='carousel-item' href='#five!'>
+            <img src={galaxy} alt='Not found'></img>
+          </a>
         </div>
-        <article className='flex flex-col justify-center'>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-            quisquam rerum perspiciatis! Eaque doloremque quibusdam blanditiis
-            atque veniam asperiores suscipit voluptate quod officia ipsum? Velit
-            nemo maxime voluptates? Aperiam, nostrum.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-            quisquam rerum perspiciatis! Eaque doloremque quibusdam blanditiis
-            atque veniam asperiores suscipit voluptate quod officia ipsum? Velit
-            nemo maxime voluptates? Aperiam, nostrum.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-            quisquam rerum perspiciatis! Eaque doloremque quibusdam blanditiis
-            atque veniam asperiores suscipit voluptate quod officia ipsum? Velit
-            nemo maxime voluptates? Aperiam, nostrum.
-          </p>
-        </article>
+
+        <PostList />
       </section>
     </Fragment>
   );

@@ -10,6 +10,9 @@ import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import MemberModal from './components/modal/MemberModal';
 import MembersState from './context/members/MembersState';
+
+import './App.css';
+import PostState from './context/posts/PostState';
 import './App.css';
 
 const App = () => {
@@ -19,19 +22,21 @@ const App = () => {
   });
   return (
     <MembersState>
-      <Router>
-        <div>
-          <Header />
-          <Navbar />
-          <MemberModal />
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/about' component={About} />
-            <Route exact path='/login' component={Login} />
-          </Switch>
-          <Footer />
-        </div>
-      </Router>
+      <PostState>
+        <Router>
+          <div>
+            <Header />
+            <Navbar />
+            <MemberModal />
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='/about' component={About} />
+              <Route exact path='/login' component={Login} />
+            </Switch>
+            <Footer />
+          </div>
+        </Router>
+      </PostState>
     </MembersState>
   );
 };
