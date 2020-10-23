@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import member from '../../assets/images/member.jfif';
+import MembersContext from '../../context/members/membersContext';
 
 const MemberItem = ({
   member: { Name, Project, RepoLink, Contact, Progress },
 }) => {
-  console.log(Name);
+  const membersContext = useContext(MembersContext);
+
   return (
     <div className='wrapper container text-gray-800  text-center  text-xl font-semibold  grey lighten-3 py-4 px-6 rounded-lg'>
       <img src={member} alt='Member' className='circle responsive-img ' />
       {Name}
 
-      {Project.length > 6 ? (
-        <span className='badge pink darken-2 white-text'>Superb</span>
-      ) : null}
       {Project.length <= 1 ? (
         <span className='badge grey  white-text'>Inactive</span>
       ) : (
@@ -22,37 +21,12 @@ const MemberItem = ({
 
       <div className='text-sm font-hairline'>{Progress}</div>
 
-      <div>
-        <div className='text-m font-mono text-yellow-800 text-center'>
-          Contribution:
-        </div>
-
-        <i
-          className={`material-icons  ${
-            Project.length >= 2 ? 'yellow-text darken-2' : 'grey-text darken-2'
-          } `}
-        >
-          star
-        </i>
-        <i
-          className={`material-icons  ${
-            Project.length >= 4 ? 'yellow-text darken-2' : 'grey-text darken-2'
-          } `}
-        >
-          star
-        </i>
-        <i
-          className={`material-icons  ${
-            Project.length >= 8 ? 'yellow-text darken-2' : 'grey-text darken-2'
-          } `}
-        >
-          star
-        </i>
-      </div>
-
       <a
-        className=' waves-effect waves-light btn modal-trigger  cyan darken-3 '
+        className='mt-4 waves-effect waves-light btn modal-trigger  cyan darken-3 '
         href='#modal1'
+        onClick={() => {
+          membersContext.selectMember(Name);
+        }}
       >
         More
       </a>

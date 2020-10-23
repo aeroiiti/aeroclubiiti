@@ -6,9 +6,13 @@ const About = () => {
       <div className='pt-8 flex justify-center text-xl  '>
         Official Website of The Aeromodelling Club
       </div>
-      <div className='text-6xl text-center font-bold py-24'>Members</div>
+      <div className='text-6xl text-center font-bold pt-24'>Members</div>
       <div className='pt-10 pb-40 mx-16'>
-        <Members />
+        <div className=' border-4 border-black rounded-lg shadow-2xl'>
+          <div className='m-1 pt-10 pb-40  border-2 border-black rounded-lg shadow-2xl'>
+            <Members />
+          </div>
+        </div>
       </div>
     </div>
   );
