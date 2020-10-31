@@ -29,11 +29,7 @@ const PostItem = ({ post }) => {
           <div className='truncate'>{post.description}</div>
         </div>
       </div>
-      {post.link && (
-        <div className='card-action row center-align'>
-          <a href={post.link}>Visit Website</a>
-        </div>
-      )}
+
       <div className='card-reveal row' style={{ margin: "0px" }}>
         <span className='card-title grey-text text-darken-4 '>
           {post.name}
@@ -41,6 +37,11 @@ const PostItem = ({ post }) => {
         </span>
         <p>{post.description}</p>
       </div>
+      {post.link && (
+        <div className='card-action center-align'>
+          <a href={post.link}>Visit Website</a>
+        </div>
+      )}
     </div>
   );
 };
