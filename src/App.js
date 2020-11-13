@@ -24,13 +24,13 @@ const App = () => {
     <MembersState>
       <PostState>
         <Router>
-          <div>
+          <div className='opacity-50 hover:opacity-75'>
             <Header />
             <Navbar />
             <MemberModal />
             <Switch>
               <Route exact path='/' component={Home} />
-              <Route path='/about' component={About} />
+              <Route exact path='/about' component={About} />
               <Route exact path='/login' component={Login} />
             </Switch>
             <Footer />

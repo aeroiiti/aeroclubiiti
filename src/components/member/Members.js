@@ -1,16 +1,14 @@
-import React, { useContext, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import MemberItem from './MemberItem.js';
-import MembersContext from '../../context/members/membersContext';
+import PropTypes from 'prop-types';
 
-const Members = () => {
-  const membersContext = useContext(MembersContext);
-  const { members, error } = membersContext;
+const Members = ({ members, error }) => {
   return (
     <Fragment>
       {!error ? (
-        <div className='grid grid-cols-3 gap-8'>
+        <div className='grid grid-cols-3 gap-6'>
           {members.map((member) => (
-            <MemberItem key={member.key} member={member} />
+            <MemberItem key={member._id} member={member} />
           ))}
         </div>
       ) : (
@@ -20,5 +18,9 @@ const Members = () => {
       )}
     </Fragment>
   );
+};
+
+Members.propTypes = {
+  members: PropTypes.array.isRequired,
 };
 export default Members;
