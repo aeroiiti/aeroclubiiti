@@ -11,29 +11,60 @@ const Home = () => {
   });
   return (
     <Fragment>
-      <section className='main wrapper container'>
-        <h1 className='flex justify-center'>Lorem</h1>
-        <p className='flex justify-center text-xl'>ipsum</p>
+      <section className='main wrapper container pb-20'>
+        <h1 className='flex justify-center'>Tinkering</h1>
+        <p className='flex justify-center text-xl'>like a star</p>
+        <div className='container mt-8'>
+          <div className='carousel carousel-slider'>
+            <a
+              className='carousel-item '
+              href='#one!'
+              style={{
+                width: '50%',
+              }}
+            >
+              <img src={galaxy} alt='Not found'></img>
+            </a>
+            <a className='carousel-item' href='#two!'>
+              <img
+                src={galaxy}
+                alt='Not found'
+                style={{
+                  width: '50%',
+                }}
+              ></img>
+            </a>
+            <a className='carousel-item' href='#three!'>
+              <img
+                src={galaxy}
+                alt='Not found '
+                style={{
+                  width: '50%',
+                }}
+              ></img>
+            </a>
+            <a className='carousel-item' href='#four!'>
+              <img
+                src={galaxy}
+                alt='Not found'
+                style={{
+                  width: '50%',
+                }}
+              ></img>
+            </a>
+            <a className='carousel-item' href='#five!'>
+              <img
+                src={galaxy}
+                alt='Not found'
+                style={{
+                  width: '50%',
+                }}
+              ></img>
+            </a>
+          </div>
 
-        <div className='carousel'>
-          <a className='carousel-item ' href='#one!'>
-            <img src={galaxy} alt='Not found'></img>
-          </a>
-          <a className='carousel-item' href='#two!'>
-            <img src={galaxy} alt='Not found'></img>
-          </a>
-          <a className='carousel-item' href='#three!'>
-            <img src={galaxy} alt='Not found'></img>
-          </a>
-          <a className='carousel-item' href='#four!'>
-            <img src={galaxy} alt='Not found'></img>
-          </a>
-          <a className='carousel-item' href='#five!'>
-            <img src={galaxy} alt='Not found'></img>
-          </a>
+          <PostList />
         </div>
-
-        <PostList />
       </section>
     </Fragment>
   );

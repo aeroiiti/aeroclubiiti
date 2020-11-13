@@ -24,7 +24,7 @@ const App = () => {
     <MembersState>
       <PostState>
         <Router>
-          <div className='opacity-50 hover:opacity-75'>
+          <div className='opacity-75'>
             <Header />
             <Navbar />
             <MemberModal />
